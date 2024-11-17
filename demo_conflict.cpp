@@ -6,7 +6,7 @@ void Snake::Update() {
         static_cast<int>(head_x),
         static_cast<int>(head_y)
     };
-    UpdateHead();
+    UpdateHead(); // Không đổi hàm
     SDL_Point current_cell{
         static_cast<int>(head_x),
         static_cast<int>(head_y)
@@ -14,7 +14,10 @@ void Snake::Update() {
     if (current_cell.x != prev_cell.x || current_cell.y != prev_cell.y) {
         UpdateBody(current_cell, prev_cell);
     }
+    // Thêm log thông tin cập nhật
+    std::cout << "Snake position updated: " << current_cell.x << ", " << current_cell.y << std::endl;
 }
+
 void Snake::UpdateHead() {
     switch (direction) {
     case Direction::kUp:
