@@ -11,10 +11,17 @@ void Snake::Update() {
         static_cast<int>(head_x),
         static_cast<int>(head_y)
     };
+
+    // Thêm logging để theo dõi các trạng thái
+    std::cout << "Previous position: (" << prev_cell.x << ", " << prev_cell.y << ")\n";
+    std::cout << "Current position: (" << current_cell.x << ", " << current_cell.y << ")\n";
+
     if (current_cell.x != prev_cell.x || current_cell.y != prev_cell.y) {
         UpdateBody(current_cell, prev_cell);
     }
 }
+
+
 void Snake::UpdateHead() {
     switch (direction) {
     case Direction::kUp:
