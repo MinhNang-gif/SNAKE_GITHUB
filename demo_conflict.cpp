@@ -8,6 +8,7 @@ int main() {
     cout << "world2" << endl;
     cout << "world3" << endl;
     cout << "world4" << endl;
+    cout << "world6" << endl;
     cout << "world5" << endl;
     return 0;
 }
