@@ -26,7 +26,7 @@ void game::Run(dieukhien const& controller, dohoa& renderer, std::size_t target_
         controller.HandleInput(running, snake);
         Update();
         if (!snake.alive) {
-            SDL_Delay(300);
+            SDL_Delay(500); // Intentional conflict change for testing
             //renderer.GameOverScreen();
             SDL_Delay(700);
             renderer.ClearScreen();
