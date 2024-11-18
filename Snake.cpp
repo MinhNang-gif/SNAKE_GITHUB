@@ -14,6 +14,10 @@ void Snake::Update() {
     if (current_cell.x != prev_cell.x || current_cell.y != prev_cell.y) {
         UpdateBody(current_cell, prev_cell);
     }
+    // Thêm điều kiện tối ưu hóa, chỉ cập nhật thân khi rắn di chuyển
+    else {
+        std::cout << "Snake did not move, skipping body update.\n";
+    }
 }
 void Snake::UpdateHead() {
     switch (direction) {
