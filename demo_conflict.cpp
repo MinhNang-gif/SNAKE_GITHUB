@@ -10,11 +10,9 @@ int main() {
     cout << "world4" << endl;
     cout << "world6" << endl;
     cout << "world5" << endl;
-<<<<<<< HEAD
     cout << "world8" << endl;
-=======
     cout << "world7" << endl;
->>>>>>> 5e523065bfd0299ae3feebe667364410933a5939
+    cout << "world9" << endl;
     return 0;
 }
 
