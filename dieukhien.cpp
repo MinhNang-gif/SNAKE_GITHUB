@@ -24,7 +24,7 @@ void dieukhien::ChangeDirection(Snake& snake, Snake::Direction input,
     if ((current_time - snake.last_direction_change) >= kDirectionChangeDelay) {
         if (snake.direction != opposite || snake.size == 1) {
             snake.direction = input;
-            snake.last_direction_change += kDirectionChangeDelay; // Cập nhật thời gian thay đổi
+            snake.last_direction_change = current_time; // Cập nhật thời gian thay đổi
         }
     }
     return;
