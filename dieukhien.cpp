@@ -22,7 +22,7 @@ void dieukhien::ChangeDirection(Snake& snake, Snake::Direction input,
     Snake::Direction opposite) const {
     Uint32 current_time = SDL_GetTicks();
     if ((current_time - snake.last_direction_change) >= kDirectionChangeDelay) {
-        if (snake.direction != opposite || snake.size == 1) {
+        if (snake.direction == opposite || snake.size == 1) {
             snake.direction = input;
             snake.last_direction_change += kDirectionChangeDelay; // Cập nhật thời gian thay đổi
         }
