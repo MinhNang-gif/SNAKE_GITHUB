@@ -3,9 +3,11 @@
 #include "SDL.h"
 #include "snake.h"
 
+// Hàm thay đổi hướng di chuyển của rắn
 void dieukhien::ChangeDirection(Snake& snake, Snake::Direction input,
     Snake::Direction opposite) const {
-    if (snake.direction != opposite || snake.size == 1) snake.direction = input;
+    if (snake.direction != opposite || snake.size == 1) 
+        snake.direction = input;
     return;
 }
 
