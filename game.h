@@ -1,6 +1,5 @@
 
 #pragma once  // Chỉ thị này giúp đảm bảo file header chỉ được include một lần trong quá trình biên dịch.
-
 // Kiểm tra định nghĩa macro để tránh việc include file header nhiều lần.
 #ifndef GAME_H
 #define GAME_H
