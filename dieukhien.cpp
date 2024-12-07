@@ -26,7 +26,8 @@ void dieukhien::HandleInput(bool& running, Snake& snake) const {
         else if (e.type == SDL_KEYDOWN) {
             // Xác định phím nào được nhấn
             switch (e.key.keysym.sym) {
-            case SDLK_UP:
+           case SDLK_UP: // Phím mũi tên lên
+                // Thay đổi hướng sang lên nếu hướng hiện tại không phải xuống
                 ChangeDirection(snake, Snake::Direction::kUp,
                     Snake::Direction::kDown);
                 break;
