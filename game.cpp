@@ -71,7 +71,6 @@ void game::Update() {
     if (!snake.alive) return;
 
     snake.Update();
-
     int new_x = static_cast<int>(snake.head_x);
     int new_y = static_cast<int>(snake.head_y);
     if (food.x == new_x && food.y == new_y) {
