@@ -44,7 +44,8 @@ void dieukhien::HandleInput(bool& running, Snake& snake) const {
                     Snake::Direction::kRight);
                 break;
 
-            case SDLK_RIGHT:
+            case SDLK_RIGHT: // Phím mũi tên phải
+                // Thay đổi hướng sang phải nếu hướng hiện tại không phải trái
                 ChangeDirection(snake, Snake::Direction::kRight,
                     Snake::Direction::kLeft);
                 break;
