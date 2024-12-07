@@ -32,7 +32,8 @@ void dieukhien::HandleInput(bool& running, Snake& snake) const {
                     Snake::Direction::kDown);
                 break;
 
-            case SDLK_DOWN:
+            case SDLK_DOWN: // Phím mũi tên xuống
+                // Thay đổi hướng sang xuống nếu hướng hiện tại không phải lên
                 ChangeDirection(snake, Snake::Direction::kDown,
                     Snake::Direction::kUp);
                 break;
