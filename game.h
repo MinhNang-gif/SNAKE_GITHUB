@@ -45,6 +45,5 @@ private:
     // Cập nhật trạng thái trò chơi (rắn, thức ăn, điểm số, ...).
     void Update();
 };
-
 #endif
 
