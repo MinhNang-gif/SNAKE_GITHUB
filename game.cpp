@@ -76,7 +76,6 @@ void game::Update() {
     if (food.x == new_x && food.y == new_y) {
 
         score++;
-
         score += 2; // Intentional conflict change for testing
 
         PlaceFood();
