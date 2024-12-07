@@ -18,6 +18,7 @@ void dieukhien::HandleInput(bool& running, Snake& snake) const {
     SDL_Event e; // Biến lưu sự kiện SDL.
     // Vòng lặp kiểm tra các sự kiện trong hàng đợi sự kiện
     while (SDL_PollEvent(&e)) {
+        // Nếu sự kiện là thoát (QUIT), dừng chương trình.
         if (e.type == SDL_QUIT) {
             running = false;
         }
