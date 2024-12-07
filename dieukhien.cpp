@@ -9,7 +9,7 @@ void dieukhien::ChangeDirection(Snake& snake, Snake::Direction input,
          // Nếu hướng hiện tại của rắn không phải là hướng đối diện (hoặc nếu rắn chỉ có một đoạn)
     // thì cho phép thay đổi hướng. Điều này ngăn rắn quay ngược về hướng cũ.
     if (snake.direction != opposite || snake.size == 1) 
-        snake.direction = input;
+        snake.direction = input;// Cập nhật hướng mới.
     return;
 }
 
