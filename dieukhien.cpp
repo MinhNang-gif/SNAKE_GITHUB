@@ -15,7 +15,8 @@ void dieukhien::ChangeDirection(Snake& snake, Snake::Direction input,
 
 // Hàm xử lý đầu vào từ người chơi
 void dieukhien::HandleInput(bool& running, Snake& snake) const {
-    SDL_Event e;
+    SDL_Event e; // Biến lưu sự kiện SDL.
+    // Vòng lặp kiểm tra các sự kiện trong hàng đợi sự kiện
     while (SDL_PollEvent(&e)) {
         if (e.type == SDL_QUIT) {
             running = false;
