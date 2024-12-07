@@ -13,6 +13,7 @@ void dieukhien::ChangeDirection(Snake& snake, Snake::Direction input,
     return;
 }
 
+// Hàm xử lý đầu vào từ người chơi
 void dieukhien::HandleInput(bool& running, Snake& snake) const {
     SDL_Event e;
     while (SDL_PollEvent(&e)) {
