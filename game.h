@@ -9,8 +9,7 @@
 #include "SDL.h"   // Thư viện SDL để quản lý đồ họa và đầu vào.
 #include "dieukhien.h"  // Header định nghĩa lớp điều khiển (controller).
 #include "dohoa.h"      // Header định nghĩa lớp đồ họa (renderer).
-#include "snake.h"      // Header định nghĩa lớp Snake (rắn).
-
+#include "snake.h"      // Header định nghĩa lớp Snake (rắn)
 // Định nghĩa lớp `game`, quản lý logic trò chơi.
 class game {
 public:
