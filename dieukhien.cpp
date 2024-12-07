@@ -22,6 +22,7 @@ void dieukhien::HandleInput(bool& running, Snake& snake) const {
         if (e.type == SDL_QUIT) {
             running = false;
         }
+        // Nếu sự kiện là nhấn phím (KEYDOWN)
         else if (e.type == SDL_KEYDOWN) {
             switch (e.key.keysym.sym) {
             case SDLK_UP:
