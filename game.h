@@ -1,6 +1,5 @@
 
 #pragma once  // Chỉ thị này giúp đảm bảo file header chỉ được include một lần trong quá trình biên dịch.
-
 // Kiểm tra định nghĩa macro để tránh việc include file header nhiều lần.
 #ifndef GAME_H
 #define GAME_H
@@ -9,8 +8,7 @@
 #include "SDL.h"   // Thư viện SDL để quản lý đồ họa và đầu vào.
 #include "dieukhien.h"  // Header định nghĩa lớp điều khiển (controller).
 #include "dohoa.h"      // Header định nghĩa lớp đồ họa (renderer).
-#include "snake.h"      // Header định nghĩa lớp Snake (rắn).
-
+#include "snake.h"      // Header định nghĩa lớp Snake (rắn)
 // Định nghĩa lớp `game`, quản lý logic trò chơi.
 class game {
 public:
@@ -47,6 +45,5 @@ private:
     // Cập nhật trạng thái trò chơi (rắn, thức ăn, điểm số, ...).
     void Update();
 };
-
 #endif
 
